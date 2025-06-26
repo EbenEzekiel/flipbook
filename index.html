@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+        <button class="ibtn" id="prev">
+            <<<
+        </button>
+
+        <div id="book">
+            <!-- Front Cover -->
+            <div class="papers " id="paper0">
+                <div class="pages back" id="p0b">
+                    <div class="back-content">
+                        <h1>Front Cover <br> NIGERIAN MINISTERS MAGAZINE</h1>
+                    </div>
+                </div>
+        
+                <div class="pages front" id="p0f">
+                    <div class="front-content">
+                        <h1>Front Cover <br> Outer</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 1 -->
+            <div class="papers " id="paper1">
+                <div class="pages back" id="p1b">
+                    <div class="back-content">
+                        <img src="./sample.png" alt="">
+                    </div>
+                    
+                </div>
+        
+                <div class="pages front" id="p1f">
+                    <div class="front-content">
+                        <h1>Paper 1 <br> Page 1</h1>
+                        <div>Page 1</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- page 2 -->
+            <div class="papers " id="paper2">
+                <div class="pages back" id="p2b">
+                    <div class="back-content">
+                        <h1>Paper 2 <br> Page 2</h1>
+                        <div>Page 4</div>
+                    </div>
+                </div>
+                
+                <div class="pages front" id="p2f">
+                    <div class="front-content">
+                        <h1>Paper 2 <br> Page 1</h1>
+                        <div>Page 3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 3 -->
+            <div class="papers " id="paper3">
+                <div class="pages back" id="p3b">
+                    <div class="back-content">
+                        <h1>Paper 3 <br> Page 2</h1>
+                        <div>Page 6</div>
+                    </div>
+                </div>
+                
+                <div class="pages front" id="p3f">
+                    <div class="front-content">
+                        <h1>Paper 3 <br> Page 1</h1>
+                        <div>Page 5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 4 -->
+            <div class="papers " id="paper4">
+                <div class="pages back" id="p4b">
+                    <div class="back-content">
+                        <h1>Paper 4 <br> Page 2</h1>
+                        <div>Page 8</div>
+                    </div>
+                </div>
+                
+                <div class="pages front" id="p4f">
+                    <div class="front-content">
+                        <h1>Paper 4 <br> Page 1</h1>
+                        <div>Page 7</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 
+            <div class="papers " id="paper5">
+                <div class="pages back" id="p5b">
+                    <div class="back-content">
+                        <iframe src="https://www.youtube.com/embed/watch?v=Jh0-nLzkZI0" title="description"></iframe>
+                    </div>
+                </div>
+                
+                <div class="pages front" id="p5f">
+                    <div class="front-content">
+                        <div>
+                            <h1>Paper 5 <br> Page 1</h1>
+                        </div>
+                        <div>
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> page 5 -->
+
+
+            <!-- Back Cover -->
+            <div class="papers " id="paper5">
+                <div class="pages back" id="p5b">
+                    <div class="back-content">
+                        <h1>Back Cover <br> Outer</h1>
+                    </div>
+                </div>
+        
+                <div class="pages front" id="p5f">
+                    <div class="front-content">
+                        <h1>Back Cover <br> Inner</h1>
+                    </div>
+                </div>
+            </div>
+
+        
+        </div>
+        
+        
+        <button class="ibtn" id="next">
+            >>>
+        </button>
+    </div>
+    <div id="jump">
+        <input type="number" name="goTo" id="goTo1" >
+    </div>
+
+</body>
+</html>
